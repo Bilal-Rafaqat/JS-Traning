@@ -1,0 +1,24 @@
+h2 {
+    background-color: yellow;
+    text-align: center;
+    width: 250px;
+    margin-left: 40%;
+    border-radius: 16px;
+}
+#event{
+    color: yellow;
+    text-align: center;
+}
+button {
+    background-color: black;
+    border-radius: 12px;
+    border-color: yellow;
+    border-width:1px;
+    color: yellow;
+    padding: 10px 21px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 45%;
+    margin-bottom: 5px;
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Js Traning</title>
+</head>
+<body style="background-color:black;" onload="javascript:autoRefresh(10000)"> <!--Autorefresh-->
+    <P style="color: yellow;">This page AutoRefresh after every 10sec</P>
+    
+    <h2>Task 1: Events</h2>
+    <h3 id="h3" style="text-align:center; color: yellow;">click below button to change my color</h3>
+    <button onclick="changeColor(this,'red')">Click me</button><br/><br/> <!--Onclick Event-->
+    
+    <form style="margin-left: 37%;" onsubmit="submitForm()">  <!--Onsubmit Event--> 
+        Name:<input type="text">
+        <input type="submit">
+    </form>
+
+     <!--onmouseover & onmouseout Event-->   
+    <h3 id="event" onmouseover="changeColor2(this,'red')" onmouseout="changeColor2(this,'yellow')">Mouse over to change my color</h3>
+    
+    <!--Create & Read cookies-->
+    <h2 >Task 2: Cookies</h2>
+    <button onclick="setCookie()">Setcookie</button><br/>
+    <button onclick="getCookie()">Getcookie</button>
+      
+    <!--Redirecting Page-->
+    <h2>Task 3: Page Redirect</h2>
+      <form style="margin-left: 44.5% ">
+         <input style="background-color: yellow;border: none;" type = "button" value = "Redirect to youtube" onclick = "redirect();" />
+      </form><br/>
+
+    <a style="margin-left: 46%" href="javascript:location.reload(true)">Refresh Page</a>  <!--Page Refresh-->
+    
+    <h2>Task 4: Dialog Box</h2>
+    <button onclick="dialogBox()">DialogBox</button>  <!--Dialog Boxes-->
+
+    <h2 style=>Task 6: Print Page</h2>
+    <button onclick="window.print()">PrintPage</button>  <!--Print page-->  
+
+    <!--Javascript files-->
+    <script src="./redirect.js"></script>
+    <script src="./app.js"></script>
+    <script src="./cookies.js"></script>
+    <script src="./dialog-boxes.js"></script>
+</body>
+</html>
+
