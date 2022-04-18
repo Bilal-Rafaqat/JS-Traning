@@ -32,3 +32,9 @@ console.log(text.substring(-2,6));
 console.log(text.toLocaleLowerCase());  //return lowercase with local browser settings
 console.log(text.toLocaleUpperCase());  //return uppercase with local browser settings
 console.log(text.toLowerCase());  //return lowercase 
+console.log(age.toString());  //to convert string object into string
+console.log(text.toUpperCase());  //convert  into upper case
+console.log(age.valueOf());  //to get primitive value of objects
+console.log(text.anchor('HI'));  //return string in <a> tag
+console.log(text.big());  //return string in <big> tag
+console.log(text.blink());  //return string in <a> tag
