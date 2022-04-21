@@ -1,0 +1,26 @@
+<html>   
+   <head>
+      <title>Using Plug-Ins</title>
+      <script src="./controling-media.js"></script>
+   </head>
+   
+   <body>   
+    <table>
+        <tr>
+           <th>Plug-in Name</th>
+           <th>Filename</th>
+           <th>Description</th>
+        </tr>
+        <video id="video1" name="video1" width="420" loop="true">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Does not support
+        </video><br/>
+      
+      <form name = "form" id = "form" action = "#" method = "get">
+         <input type = "button" value = "Start" onclick = "play();" />
+         <input type = "button" value = "Stop" onclick = "stop();" />
+         <input type = "button" value = "Rewind" onclick = "rewind();" />
+      </form>      
+      <script src="./media.js"></script>
+   </body>
+</html>
