@@ -1,0 +1,46 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "\"test\"",
+    "lint": "eslint 'app.js' --fix",
+    "format": "prettier-eslint 'app.js' --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bilal-Rafaqat/JS-Traning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bilal-Rafaqat/JS-Traning/issues"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.2.0",
+    "pre-commit": "^1.2.2"
+  },
+  "homepage": "https://github.com/Bilal-Rafaqat/JS-Traning#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
+    "prettier-eslint-cli": "^5.0.1"
+  }
+}
